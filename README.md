@@ -45,7 +45,7 @@ It also uses **64 round constants** (K[0..63]) derived from the cube roots of th
 
 ### 3. Message Schedule
 
-Each 512-bit block is expanded into **16 32-bit words** (`W[0..15]`) and then diffused into **64 32-bit words** ('W[0..63]'):
+Each 512-bit block is expanded into **64 32-bit words** (`W[0..63]`):
 
 ```
 W[i] = M[i]                                          for i in [0, 15]
